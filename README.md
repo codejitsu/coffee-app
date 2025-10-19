@@ -12,3 +12,16 @@ mvn archetype:generate -DgroupId=codejitsu.coffee.app -DartifactId=coffee-java-a
 - Use reflection to scan for classes with `@CoffeeApplicationController` and invoke methods annotated with `@CoffeeApplicationCreate`.
 
 - Example controller class `AppController` with a create method that prints input to console.
+
+# Build
+
+```
+mvn clean install
+```
+
+# Run
+
+```
+cd /coffee-java-app/
+mvn compile exec:java -Dexec.mainClass="codejitsu.coffee.app.App"
+```
